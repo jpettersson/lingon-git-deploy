@@ -1,0 +1,20 @@
+{
+  "name": "orangejuice-git-deploy",
+  "private": "true",
+  "author": {
+    "name": "Jonathan Pettersson",
+    "email": "jonathan@spacetofu.com",
+    "url": "http://jpettersson.com"
+  },
+  "description": "Deploy your Orangejuice build with git",
+  "version": "0.0.1",
+  "main": "index",
+  "dependencies": {
+    "orangejuice": "~0.2.0",
+    "gift": "*",
+    "chalk": "*",
+    "when": "*"
+  },
+  "devDependencies": {
+  }
+}
