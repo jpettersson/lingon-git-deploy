@@ -12,13 +12,12 @@ module.exports = function(oj, config) {
     }
     var command = __dirname + "/lib/./deploy.sh";
 
-    oj.log(chalk.magenta(
-      'Deploying via git to remote="',
-      config.remote,
-      '" and branch="',
-      config.branch,
-      '"'
-    ));
+    oj.log(
+      'Deploying via git to remote:',
+      chalk.green(config.remote),
+      'branch:',
+      chalk.green(config.branch)
+    );
 
     var deploy = spawn(command, [
       path.join(process.cwd(), oj.buildPath),
