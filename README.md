@@ -33,8 +33,6 @@ ojGitDeploy(oj, {
 $ ./ojfile.js git:deploy
 ``
 
-``
-
 ## Configuration Options
 
 ```JavaScript
