@@ -5,9 +5,14 @@
     "email": "jonathan@spacetofu.com",
     "url": "http://jpettersson.com"
   },
+
   "description": "Deploy your Orangejuice build with git",
   "version": "0.0.2",
   "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jpettersson/orangejuice-git-deploy.git"
+  },
   "dependencies": {
     "orangejuice": "~0.3.0",
     "chalk": "0.4.0"
