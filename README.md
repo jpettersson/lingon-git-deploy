@@ -9,7 +9,7 @@ This plugin creates a temporary git repository in your build folder, commits all
 **install:** 
 
 ``
-npm install orangejuice-git-deploy
+$ npm install orangejuice-git-deploy
 ``
 
 **ojfile:**
@@ -30,14 +30,14 @@ ojGitDeploy(oj, {
 **deploy:**
 
 ``
-./ojfile.js git:deploy
+$ ./ojfile.js git:deploy
 ``
 
 ``
 
 ## Configuration Options
 
-```
+```JavaScript
 ojGitDeploy(oj, {
   remote: "git@server.com:project.git"    // The full git remote url
   branch: "master"                        // A branch name
