@@ -6,7 +6,7 @@
     "url": "http://jpettersson.com"
   },
   "description": "Deploy your Orangejuice build with git",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index",
   "dependencies": {
     "orangejuice": "~0.3.0",
