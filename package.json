@@ -10,9 +10,7 @@
   "main": "index",
   "dependencies": {
     "orangejuice": "~0.3.0",
-    "gift": "*",
-    "chalk": "*",
-    "when": "*"
+    "chalk": "0.4.0",
   },
   "devDependencies": {
   }
