@@ -1,4 +1,4 @@
-# oj-git-deploy
+# orangejuice-git-deploy
 
 An [Orangejuice](https://github.com/jpettersson/orangejuice) plugin to deploy your static site using git. 
 
