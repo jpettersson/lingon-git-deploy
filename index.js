@@ -5,7 +5,7 @@ var path = require('path');
 module.exports = function(lingon, config) {
   config.branch = config.branch || 'master';
 
-  lingon.registerTask('git:deploy', function() {
+  var gitDeploy = function() {
     if(!config.remote) {
       lingon.log(chalk.red("Error: git:deploy - missing git remote"));
       return;
@@ -26,6 +26,10 @@ module.exports = function(lingon, config) {
     ],{
       stdio: 'inherit'
     });
+  };
+
+  lingon.registerTask('git:deploy', gitDeploy, {
+    message: "Deploy the build folder using git"
   });
 
 };
