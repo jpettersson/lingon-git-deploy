@@ -1,19 +1,19 @@
 {
-  "name": "orangejuice-git-deploy",
+  "name": "lingon-git-deploy",
   "author": {
     "name": "Jonathan Pettersson",
     "email": "jonathan@spacetofu.com",
     "url": "http://jpettersson.com"
   },
-  "description": "Deploy your Orangejuice build with git",
+  "description": "Deploy your Lingon build with git",
   "version": "0.0.3",
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jpettersson/orangejuice-git-deploy.git"
+    "url": "git@github.com:jpettersson/lingon-git-deploy.git"
   },
   "dependencies": {
-    "orangejuice": "~0.3.0",
+    "lingon": "~0.3.0",
     "chalk": "0.4.0"
   },
   "devDependencies": {

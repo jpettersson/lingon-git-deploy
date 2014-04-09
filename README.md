@@ -1,6 +1,6 @@
-# orangejuice-git-deploy
+# lingon-git-deploy
 
-An [Orangejuice](https://github.com/jpettersson/orangejuice) plugin to deploy your static site using git. 
+An [Lingon](https://github.com/jpettersson/lingon) plugin to deploy your static site using git. 
 
 This plugin creates a temporary git repository in your build folder, commits all files, adds a git remote and pushes. This is useful if you want to automate the deployment of your static site build to heroku, dokku or similar.
 
@@ -9,18 +9,18 @@ This plugin creates a temporary git repository in your build folder, commits all
 **install:** 
 
 ``
-$ npm install orangejuice-git-deploy
+$ npm install lingon-git-deploy
 ``
 
-**ojfile:**
+**Configure in lingon.js:**
 
 ```JavaScript
 #!/usr/bin/env node
 
-var oj = require('orangejuice'),
-    ojGitDeploy = require('orangejuice-git-deploy');
+var lingon = require('lingon'),
+    gitDeploy = require('lingon-git-deploy');
 
-ojGitDeploy(oj, {
+gitDeploy(lingon, {
   branch: "gh-pages"
 });
 
@@ -30,13 +30,13 @@ ojGitDeploy(oj, {
 **deploy:**
 
 ``
-$ ./ojfile.js git:deploy
+$ ./lingon.js git:deploy
 ``
 
 ## Configuration Options
 
 ```JavaScript
-ojGitDeploy(oj, {
+gitDeploy(lingon, {
   remote: "git@server.com:project.git"    // The full git remote url
   branch: "master"                        // A branch name
 });

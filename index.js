@@ -2,17 +2,17 @@ var chalk = require('chalk');
 var spawn = require('child_process').spawn;
 var path = require('path');
 
-module.exports = function(oj, config) {
+module.exports = function(lingon, config) {
   config.branch = config.branch || 'master';
 
-  oj.registerTask('git:deploy', function() {
+  lingon.registerTask('git:deploy', function() {
     if(!config.remote) {
-      oj.log(chalk.red("Error: git:deploy - missing git remote"));
+      lingon.log(chalk.red("Error: git:deploy - missing git remote"));
       return;
     }
     var command = __dirname + "/lib/./deploy.sh";
 
-    oj.log(
+    lingon.log(
       'Deploying via git to remote:',
       chalk.green(config.remote),
       'branch:',
@@ -20,7 +20,7 @@ module.exports = function(oj, config) {
     );
 
     var deploy = spawn(command, [
-      path.join(process.cwd(), oj.buildPath),
+      path.join(process.cwd(), lingon.buildPath),
       config.branch, 
       config.remote
     ],{
