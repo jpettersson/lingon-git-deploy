@@ -6,7 +6,7 @@
     "url": "http://jpettersson.com"
   },
   "description": "Deploy your Lingon build with git",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index",
   "repository": {
     "type": "git",
