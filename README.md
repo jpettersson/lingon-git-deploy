@@ -1,6 +1,6 @@
 # lingon-git-deploy
 
-An [Lingon](https://github.com/jpettersson/lingon) plugin to deploy your static site using git. 
+A [Lingon](https://github.com/jpettersson/lingon) plugin to deploy your static site using git. 
 
 This plugin creates a temporary git repository in your build folder, commits all files, adds a git remote and pushes. This is useful if you want to automate the deployment of your static site build to heroku, dokku or similar.
 
