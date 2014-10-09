@@ -20,7 +20,7 @@ module.exports = function(lingon, config) {
     );
 
     var deploy = spawn(command, [
-      path.join(process.cwd(), lingon.buildPath),
+      path.join(process.cwd(), lingon.config.buildPath),
       config.branch, 
       config.remote
     ],{
