@@ -1,0 +1,111 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/boxen/nodenv/versions/v0.10.31/bin/node',
+1 verbose cli   '/opt/boxen/nodenv/versions/v0.10.31/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '.' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/jpettersson/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/jpettersson/.npm/lingon-git-deploy/0.0.4/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /Users/jpettersson/.npm/lingon-git-deploy/0.0.4/package.tgz
+12 verbose folder .
+13 info prepublish lingon-git-deploy@0.0.4
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/jpettersson/.npm/1f1177db-tar.lock
+16 silly lockFile 7b7a1e0f-gon-git-deploy-0-0-4-package-tgz tar:///Users/jpettersson/.npm/lingon-git-deploy/0.0.4/package.tgz
+17 verbose lock tar:///Users/jpettersson/.npm/lingon-git-deploy/0.0.4/package.tgz /Users/jpettersson/.npm/7b7a1e0f-gon-git-deploy-0-0-4-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 7b7a1e0f-gon-git-deploy-0-0-4-package-tgz tar:///Users/jpettersson/.npm/lingon-git-deploy/0.0.4/package.tgz
+21 silly lockFile 7b7a1e0f-gon-git-deploy-0-0-4-package-tgz tar:///Users/jpettersson/.npm/lingon-git-deploy/0.0.4/package.tgz
+22 silly lockFile 36de2784--lingon-git-deploy-0-0-4-package /Users/jpettersson/.npm/lingon-git-deploy/0.0.4/package
+23 verbose lock /Users/jpettersson/.npm/lingon-git-deploy/0.0.4/package /Users/jpettersson/.npm/36de2784--lingon-git-deploy-0-0-4-package.lock
+24 silly lockFile 36de2784--lingon-git-deploy-0-0-4-package /Users/jpettersson/.npm/lingon-git-deploy/0.0.4/package
+25 silly lockFile 36de2784--lingon-git-deploy-0-0-4-package /Users/jpettersson/.npm/lingon-git-deploy/0.0.4/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'lingon-git-deploy',
+28 silly publish   author:
+28 silly publish    { name: 'Jonathan Pettersson',
+28 silly publish      email: 'jonathan@spacetofu.com',
+28 silly publish      url: 'http://jpettersson.com' },
+28 silly publish   description: 'Deploy your Lingon build with git',
+28 silly publish   version: '0.0.4',
+28 silly publish   main: 'index',
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'git@github.com:jpettersson/lingon-git-deploy.git' },
+28 silly publish   dependencies: { lingon: '~2.0.0', chalk: '0.4.0' },
+28 silly publish   devDependencies: {},
+28 silly publish   readme: '# lingon-git-deploy\n\nA [Lingon](https://github.com/jpettersson/lingon) plugin to deploy your static site using git. \n\nThis plugin creates a temporary git repository in your build folder, commits all files, adds a git remote and pushes. This is useful if you want to automate the deployment of your static site build to heroku, dokku or similar.\n\n## Usage\n\n**install:** \n\n``\n$ npm install lingon-git-deploy\n``\n\n**Configure in lingon.js:**\n\n```JavaScript\n#!/usr/bin/env node\n\nvar lingon = require(\'lingon\'),\n    gitDeploy = require(\'lingon-git-deploy\');\n\ngitDeploy(lingon, {\n  branch: "gh-pages"\n});\n\n...\n```\n\n**deploy:**\n\n``\n$ ./lingon.js git:deploy\n``\n\n## Configuration Options\n\n```JavaScript\ngitDeploy(lingon, {\n  remote: "git@server.com:project.git"    // The full git remote url\n  branch: "master"                        // A branch name\n});\n```\n\n## Contributions\n\nWe will be thrilled to receive your pull requests. Take a look at the issues if you are unsure what to work on, or if you want to suggest a feature. If you also include tests with your patch you will receive countless virtual high fives!\n\n## License\n\nLicensed under the MIT license.\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '01967e1f217a10e9d41ad3d52ee59fb09c0c2ddd',
+28 silly publish   bugs: { url: 'https://github.com/jpettersson/lingon-git-deploy/issues' },
+28 silly publish   homepage: 'https://github.com/jpettersson/lingon-git-deploy',
+28 silly publish   _id: 'lingon-git-deploy@0.0.4',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: '6a4b2f5b8a91d6601b502cf9358e28f22709a973',
+28 silly publish   _from: '.' }
+29 verbose request where is /lingon-git-deploy
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 31a35f503679ba5f
+32 verbose url raw /lingon-git-deploy
+33 verbose url resolving [ 'https://registry.npmjs.org/', './lingon-git-deploy' ]
+34 verbose url resolved https://registry.npmjs.org/lingon-git-deploy
+35 verbose request where is https://registry.npmjs.org/lingon-git-deploy
+36 info trying registry request attempt 1 at 10:49:08
+37 http PUT https://registry.npmjs.org/lingon-git-deploy
+38 http 403 https://registry.npmjs.org/lingon-git-deploy
+39 verbose headers { date: 'Thu, 11 Dec 2014 09:49:09 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '3667',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-ams4139-AMS',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1418291349.115498,VS0,VE163',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden cannot modify pre-existing version: 0.0.4
+41 error old={"name":"lingon-git-deploy","author":{"name":"Jonathan Pettersson","email":"jonathan@spacetofu.com","url":"http://jpettersson.com"},"description":"Deploy your Lingon build with git","version":"0.0.4","main":"index","repository":{"type":"git","url":"git@github.com:jpettersson/lingon-git-deploy.git"},"dependencies":{"lingon":"~0.4.0","chalk":"0.4.0"},"devDependencies":{},"bugs":{"url":"https://github.com/jpettersson/lingon-git-deploy/issues"},"homepage":"https://github.com/jpettersson/lingon-git-deploy","_id":"lingon-git-deploy@0.0.4","dist":{"shasum":"1953bb1db136b7624dec0646cf1428c2b1e38c43","tarball":"http://registry.npmjs.org/lingon-git-deploy/-/lingon-git-deploy-0.0.4.tgz"},"_from":".","_npmVersion":"1.4.3","_npmUser":{"name":"jpettersson","email":"jonathan@spacetofu.com"},"maintainers":[{"name":"jpettersson","email":"jonathan@spacetofu.com"}]}
+41 error new={"name":"lingon-git-deploy","author":{"name":"Jonathan Pettersson","email":"jonathan@spacetofu.com","url":"http://jpettersson.com"},"description":"Deploy your Lingon build with git","version":"0.0.4","main":"index","repository":{"type":"git","url":"git@github.com:jpettersson/lingon-git-deploy.git"},"dependencies":{"lingon":"~2.0.0","chalk":"0.4.0"},"devDependencies":{},"readme":"# lingon-git-deploy\u000a\u000aA [Lingon](https://github.com/jpettersson/lingon) plugin to deploy your static site using git. \u000a\u000aThis plugin creates a temporary git repository in your build folder, commits all files, adds a git remote and pushes. This is useful if you want to automate the deployment of your static site build to heroku, dokku or similar.\u000a\u000a## Usage\u000a\u000a**install:** \u000a\u000a``\u000a$ npm install lingon-git-deploy\u000a``\u000a\u000a**Configure in lingon.js:**\u000a\u000a```JavaScript\u000a#!/usr/bin/env node\u000a\u000avar lingon = require('lingon'),\u000a    gitDeploy = require('lingon-git-deploy');\u000a\u000agitDeploy(lingon, {\u000a  branch: \"gh-pages\"\u000a});\u000a\u000a...\u000a```\u000a\u000a**deploy:**\u000a\u000a``\u000a$ ./lingon.js git:deploy\u000a``\u000a\u000a## Configuration Options\u000a\u000a```JavaScript\u000agitDeploy(lingon, {\u000a  remote: \"git@server.com:project.git\"    // The full git remote url\u000a  branch: \"master\"                        // A branch name\u000a});\u000a```\u000a\u000a## Contributions\u000a\u000aWe will be thrilled to receive your pull requests. Take a look at the issues if you are unsure what to work on, or if you want to suggest a feature. If you also include tests with your patch you will receive countless virtual high fives!\u000a\u000a## License\u000a\u000aLicensed under the MIT license.\u000a","readmeFilename":"README.md","gitHead":"01967e1f217a10e9d41ad3d52ee59fb09c0c2ddd","bugs":{"url":"https://github.com/jpettersson/lingon-git-deploy/issues"},"homepage":"https://github.com/jpettersson/lingon-git-deploy","_id":"lingon-git-deploy@0.0.4","scripts":{},"_shasum":"6a4b2f5b8a91d6601b502cf9358e28f22709a973","_from":".","_npmVersion":"1.4.23","_npmUser":{"name":"jpettersson","email":"jonathan@spacetofu.com"},"maintainers":[{"name":"jpettersson","email":"jonathan@spacetofu.com"}],"dist":{"shasum":"6a4b2f5b8a91d6601b502cf9358e28f22709a973","tarball":"http://registry.npmjs.org/lingon-git-deploy/-/lingon-git-deploy-0.0.4.tgz"}}: lingon-git-deploy
+41 error     at RegClient.<anonymous> (/opt/boxen/nodenv/versions/v0.10.31/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+41 error     at Request._callback (/opt/boxen/nodenv/versions/v0.10.31/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+41 error     at Request.self.callback (/opt/boxen/nodenv/versions/v0.10.31/lib/node_modules/npm/node_modules/request/request.js:123:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/opt/boxen/nodenv/versions/v0.10.31/lib/node_modules/npm/node_modules/request/request.js:893:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/opt/boxen/nodenv/versions/v0.10.31/lib/node_modules/npm/node_modules/request/request.js:844:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 13.3.0
+44 error command "/opt/boxen/nodenv/versions/v0.10.31/bin/node" "/opt/boxen/nodenv/versions/v0.10.31/bin/npm" "publish" "."
+45 error cwd /Users/jpettersson/Projects/jpettersson/lingon-git-deploy
+46 error node -v v0.10.31
+47 error npm -v 1.4.23
+48 verbose exit [ 1, true ]
