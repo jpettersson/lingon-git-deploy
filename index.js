@@ -7,12 +7,12 @@ module.exports = function(lingon, config) {
 
   var gitDeploy = function() {
     if(!config.remote) {
-      lingon.log(chalk.red("Error: git:deploy - missing git remote"));
+      lingon.log.error('Error: git:deploy - missing git remote');
       return;
     }
-    var command = __dirname + "/lib/./deploy.sh";
+    var command = __dirname + '/lib/./deploy.sh';
 
-    lingon.log(
+    lingon.log.info(
       'Deploying via git to remote:',
       chalk.green(config.remote),
       'branch:',
@@ -29,7 +29,7 @@ module.exports = function(lingon, config) {
   };
 
   lingon.registerTask('git:deploy', gitDeploy, {
-    message: "Deploy the build folder using git"
+    message: 'Deploy the build folder using git'
   });
 
 };
